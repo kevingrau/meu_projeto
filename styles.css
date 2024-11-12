@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.map-container {
+    flex: 1; /* O mapa ocupa 1 parte do espaço */
+    margin-right: 20px; /* Espaço entre o mapa e o conteúdo */
+}
+
+.content-container {
+    flex: 1; /* O conteúdo (gráfico e lista) ocupa 1 parte do espaço */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.pior-lista {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#comparison-chart {
+    /* Ajuste o tamanho do gráfico conforme necessário */
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos da Seção de Soluções */
+#solucoes {
+    background-color: #e8f4ff;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#solucoes h2 {
+    margin-top: 0;
+    color: #0056b3;
+}
+
+#solucoes p {
+    font-size: 18px;
+    line-height: 1.5;
+}

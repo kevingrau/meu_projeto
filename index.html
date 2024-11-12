@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interativo com Gráficos</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Seu arquivo de estilo -->
+    <!-- Inclua as bibliotecas do Leaflet e Chart.js -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Seção do Mapa -->
+        <div class="map-container">
+            <div id="map" style="height: 500px;"></div>
+        </div>
+    
+        <!-- Seção do Gráfico, Lista e Soluções -->
+        <div class="content-container">
+            <!-- Botões para selecionar os índices -->
+            <div class="buttons">
+                <button id="idhBtn">IDH</button>
+                <button id="desperdicioBtn">Desperdício de Alimentos</button>
+                <button id="desmatamentoBtn">Desmatamento</button>
+            </div>
+    
+            <!-- Lista dos 3 piores países -->
+            <ul id="pior-lista" class="pior-lista"></ul>
+    
+            <!-- Gráfico comparativo -->
+            <canvas id="comparison-chart" width="800" height="400"></canvas>
+    
+            <!-- Seção de Soluções -->
+            <div id="solucoes">
+                <h2>Soluções</h2>
+                <p id="solution-text">Selecione um tema para ver a solução correspondente.</p>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <!-- Incluindo o script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
