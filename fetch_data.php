@@ -53,7 +53,7 @@ if ($resultPiores->num_rows > 0) {
 // Fecha a conexão
 $conn->close();
 
-// Retorna um JSON com os melhores e piores países
+// Retorna um JSON com os melhores e piores países 
 echo json_encode([
     'melhores' => $paisesMelhores,
     'piores' => $paisesPiores
